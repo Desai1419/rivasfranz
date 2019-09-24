@@ -11,7 +11,7 @@
 	} 
 	
 	body { 
-	 background-color: #FF4136;
+	 background-color: #9400D3;
       width: 400px;
       height: 400px;
       position: absolute;
@@ -24,7 +24,7 @@
 </head> 
 
 <body> 
-<h1 style="font-family: castellar;">Guess The Number</h1> 
+<h1 style="font-family: Times New Roman;">Guess The Number</h1> 
 
 <p style="font-family: arial;">We have selected a random number between <i>1 - 10</i>. 
 See if you can guess it.</p> 
@@ -48,32 +48,22 @@ See if you can guess it.</p>
  
 var x = document.getElementById("guessField").value; 
 
-if(x == y) 
-{	 
+if(x == y) {	 
 	alert("CONGRATULATIONS!!! you are right in "
-			+ guess + " GUESS "); 
-} 
-else if (x=="")
-{
+			+ guess + " GUESS "); } 
+else if (x==""){
     guess++;
-	alert("Missing guess parameter");
-} 
+	alert("Missing guess parameter");} 
 
-else if(x > y) 
-{	 
+else if(x > y) {	 
 	guess++; 
-	alert("Your guess is too high"); 
-} 
-else if (x < y)
-{ 
+	alert("Your guess is too high"); } 
+else if (x < y){ 
 	guess++; 
-	alert("Your guess is too low") 
-}
-else if (isNaN(x))
-{
+	alert("Your guess is too low") }
+else if (isNaN(x)){
     guess++;
-	alert("Your guess is not a number");
-}
+	alert("Your guess is not a number");}
 
 } 
 
